@@ -10,7 +10,7 @@ const ProjectsCard = ({
   heading,
   title,
   coverImage,
-  headingSize
+  headingSize,
 }: {
   height: string;
   url: string;
@@ -24,13 +24,13 @@ const ProjectsCard = ({
   return (
     <div className={`w-100 flex flex-col gap-5 cursor-pointer group`}>
       <div
-        className={`w-full h-${height} bg-white overflow-hidden relative rounded-4xl`}
+        className={`w-full h-${height} overflow-hidden relative rounded-4xl`}
       >
         <video ref={videoRef} src={url} autoPlay muted loop></video>
         <Image
           src={coverImage}
-          width={600}
-          height={400}
+          width={650}
+          height={450}
           alt="project cover"
           className="absolute inset-0 wull h-full object-cover transition-all duration-400 ease-in-out
                    scale-100 opacity-100 group-hover:scale-110 group-hover:opacity-0 pointer-events-none"
@@ -38,7 +38,10 @@ const ProjectsCard = ({
       </div>
       <div className="w-[80%] flex min-h-20 text-[19px] gap-4 ">
         <p className="tracking-wider">
-          <span className={`w-max font-bold text-${headingSize} `} >{heading}</span> - {title}{" "}
+          <span className={`w-max font-bold text-${headingSize} `}>
+            {heading}
+          </span>{" "}
+          - {title}{" "}
         </p>
       </div>
     </div>

@@ -41,7 +41,7 @@ const Resources = () => {
         >
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="bg-white h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="h-59 w-104 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource1.png"}
                   alt="Resource 1"
@@ -55,7 +55,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="bg-white h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="h-59 w-104 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource2.png"}
                   alt="Resource 2"
@@ -69,7 +69,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="bg-white h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="h-59 w-104 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource3.png"}
                   alt="Resource 3"
@@ -83,7 +83,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="bg-white h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="h-59 w-104 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource4.png"}
                   alt="Resource 1"
@@ -97,7 +97,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="bg-white h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="h-59 w-104 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource5.jpg"}
                   alt="Resource 1"
@@ -111,7 +111,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="bg-white h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="h-59 w-104 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource6.png"}
                   alt="Resource 2"
