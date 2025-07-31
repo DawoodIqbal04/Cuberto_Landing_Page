@@ -9,7 +9,7 @@ const roboto = Roboto_Flex({
 const Roboto = ({ text }: { text: string }) => {
   const tilt = text.split("");
   return (
-    <div className={`${roboto.className} flex gap-1 font-thin `}>
+    <div className={`${roboto.className} font-extralight flex gap-1 `}>
       {tilt.map((t, i) => (
         <p key={i} className="italic scale-x-[115%]">
           {t}
