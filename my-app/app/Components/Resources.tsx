@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Resources = () => {
   return (
-    <div className="w-full min-h-screen text-white bg-[#1A1A1A] rounded-t-[60px] py-44">
+    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] py-44">
       <div className="flex flex-col text-[120px] leading-25 tracking-tighter pl-34">
         <div>
           <h1>Development</h1>
@@ -134,7 +134,7 @@ const Resources = () => {
           </h1>
         </div>
         <div className="flex items-center justify-center w-58 h-10 border border-white rounded-full">
-          <h1 className="text-xl font-medium ">VIEW ALL RESOURCES</h1>
+          <h1 className="text-base font-medium ">VIEW ALL RESOURCES</h1>
         </div>
       </div>
     </div>

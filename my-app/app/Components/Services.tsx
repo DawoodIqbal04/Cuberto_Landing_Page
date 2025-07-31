@@ -24,7 +24,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#1A1A1A] rounded-t-[60px] tracking-tighter">
+    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter">
       <div className="flex flex-col items-center py-40">
         <div className="flex flex-col items-start gap-30">
           <div className="text-[123px] flex flex-col items-start leading-24 ">

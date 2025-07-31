@@ -61,7 +61,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#1A1A1A] rounded-t-[60px] tracking-tighter">
+    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter">
       <div className="pt-24 pl-34 pb-28">
         <div className="text-[123px] flex flex-col items-start leading-32 ">
         <div>

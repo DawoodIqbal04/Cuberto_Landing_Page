@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import Resources from "./components/Resources";
 import Inspiration from "./components/Inspiration";
 import Services from "./components/Services";
+import PreFooter from "./components/PreFooter";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Resources />
       <Inspiration />
       <Services />
+      <PreFooter />
+      <Footer />
     </main>
   );
 }
