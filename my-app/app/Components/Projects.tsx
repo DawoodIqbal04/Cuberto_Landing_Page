@@ -64,7 +64,7 @@ const Projects = () => {
     <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter">
       <div className="pt-24 pl-34 pb-28">
         <div className="text-[123px] flex flex-col items-start leading-32 ">
-        <div>
+        <div className="font-medium">
           <h1>Featured</h1>
         </div>
         <div className="flex items-center gap-4">

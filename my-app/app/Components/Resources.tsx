@@ -11,7 +11,7 @@ import Image from "next/image";
 const Resources = () => {
   return (
     <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] py-44">
-      <div className="flex flex-col text-[120px] leading-25 tracking-tighter pl-34">
+      <div className="flex flex-col text-[120px] font-medium leading-25 tracking-tighter pl-34">
         <div>
           <h1>Development</h1>
         </div>

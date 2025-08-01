@@ -6,7 +6,7 @@ const PreFooter = () => {
         <div className='absolute top-0 left-0 w-full h-full bg-cover bg-center'>
             <video src="/footer.mp4" muted autoPlay loop></video>
         </div>
-        <div className='relative z-10 flex flex-col items-center gap-8 text-center text-8xl font-thin'>
+        <div className='relative z-10 flex flex-col items-center gap-8 text-center text-8xl font-normal'>
           <div className=''>
             <p>Have<br /> An Idea?</p>
           </div>

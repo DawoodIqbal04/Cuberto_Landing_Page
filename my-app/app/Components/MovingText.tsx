@@ -46,17 +46,17 @@ const MovingText = () => {
 
   return (
     <div className="w-full h-screen absolute top-[calc(100vh - 300px)] bg-white text-black">
-      <div ref={sliderRef} className="flex items-center relative min-w-[315vw] text-[160px] ">
+      <div ref={sliderRef} className="flex items-center relative min-w-[330vw] text-[160px] ">
         <div ref={firsttextRef} className="flex items-center gap-15 pl-15">
-          <h1 className="flex ">
+          <h1 className="flex font-medium">
             New Day ― <Roboto text="        New            Inspo" />
           </h1>
           <div className="w-54 h-34 rounded-full bg-white overflow-hidden">
             <video src="/inspo.mp4" autoPlay muted loop></video>
           </div>
         </div>
-        <div ref={secondtextRef} className="flex items-center gap-15 absolute left-498">
-          <h1 className="flex">
+        <div ref={secondtextRef} className="flex items-center gap-15 absolute left-525">
+          <h1 className="flex font-medium">
             New Day ― <Roboto text="        New            Inspo" />
           </h1>
           <div className="w-54 h-34 rounded-full bg-white overflow-hidden">

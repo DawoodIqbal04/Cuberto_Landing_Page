@@ -28,7 +28,7 @@ const Projects = () => {
       <div className="flex flex-col items-center py-40">
         <div className="flex flex-col items-start gap-30">
           <div className="text-[123px] flex flex-col items-start leading-24 ">
-            <div>
+            <div className="font-medium">
               <h1>Our</h1>
             </div>
             <div className="tracking-wide">

@@ -5,7 +5,7 @@ const Philosophy = () => {
   return (
     <div className='w-full min-h-screen bg-white text-black flex flex-col items-start px-34 py-40  gap-30 rounded-t-[60px] '>
         <div className='text-[140px] flex flex-col items-start leading-32'>
-            <h1 className=' tracking-tight'>Our</h1>
+            <h1 className=' tracking-tight font-medium'>Our</h1>
             <div>
                 <Roboto text='philosophy'/>
             </div>

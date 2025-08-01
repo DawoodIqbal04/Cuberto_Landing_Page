@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="w-full flex items-start justify-between">
         <div className="flex items-center gap-6 w-1/2">
           <div className="flex flex-col items-start gap-6 w-1/2">
-            <div className="flex items-center justify-center w-48 h-10 text-xl border border-white rounded-full">
+            <div className="flex items-center justify-center tracking-tight w-50 h-10 text-xl border border-white rounded-full">
               <p>info@cuberto.com</p>
             </div>
             <div className="text-sm">
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-start gap-6 w-1/2">
-            <div className="flex items-center justify-center w-46 tracking-wide h-10 text-xl border border-white rounded-full">
+            <div className="flex items-center justify-center w-46 h-10 text-xl border border-white rounded-full">
               <p>+1 234 567 8900</p>
             </div>
             <div className="text-sm">

@@ -5,7 +5,7 @@ const Hero = () => {
   let tilt = "design".split("");
 
   return (
-    <div className="w-full h-[calc(100vh-130px)] flex flex-col gap-5 text-black text-8xl leading-16 pl-34 py-16 tracking-tight">
+    <div className="w-full h-[calc(100vh-130px)] font-medium flex flex-col gap-5 text-black text-8xl leading-16 pl-34 py-16 tracking-tight">
       <div>
         <h1>We are a digital</h1>
       </div>
