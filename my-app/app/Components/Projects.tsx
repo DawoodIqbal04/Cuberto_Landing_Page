@@ -61,126 +61,135 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter">
-      <div className="pt-24 pl-34 pb-28">
-        <div className="text-[123px] flex flex-col items-start leading-32 ">
-        <div className="font-medium">
-          <h1>Featured</h1>
-        </div>
-        <div className="flex items-center gap-4">
-          <div className="w-46 h-30 rounded-full bg-white overflow-hidden">
-            <video src="/feature.mp4" autoPlay muted loop></video>
+    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter lg:px-0 px-4">
+      <div className="pt-24 lg:pl-34 lg:pb-28">
+        <div className="lg:text-[123px] text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
+          <div className="font-medium">
+            <h1>Featured</h1>
           </div>
-          <div>
+          <div className="flex items-center gap-4">
+            <div className="w-46 h-30 rounded-full bg-white overflow-hidden lg:flex hidden">
+              <video src="/feature.mp4" autoPlay muted loop></video>
+            </div>
+            <div>
+              <Roboto text="projects" />
+            </div>
+          </div>
+        </div>
+        <div className="text-5xl lg:hidden flex items-center gap-5">
+          <div className=" flex flex-col items-start">
+            <h1>Featured</h1>
             <Roboto text="projects" />
           </div>
+            <div className="w-30 h-20 rounded-full bg-white overflow-hidden">
+              <video src="/feature.mp4" autoPlay muted loop></video>
+            </div>
         </div>
-      </div>
-      <div className="flex gap-12 pt-38">
-        <div className="flex flex-col items-center gap-14">
-          <div>
-            <ProjectsCard
-              height="135"
-              url={urls[0]}
-              heading={headings[0]}
-              title={titles[0]}
-              coverImage={coverImages[0]}
-            />
+        <div className="flex gap-12 pt-38">
+          <div className="flex flex-col items-center gap-14">
+            <div>
+              <ProjectsCard
+                height="135"
+                url={urls[0]}
+                heading={headings[0]}
+                title={titles[0]}
+                coverImage={coverImages[0]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="100"
+                url={urls[1]}
+                heading={headings[1]}
+                title={titles[1]}
+                coverImage={coverImages[1]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="100"
+                url={urls[2]}
+                heading={headings[2]}
+                title={titles[2]}
+                coverImage={coverImages[2]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="135"
+                url={urls[3]}
+                heading={headings[3]}
+                title={titles[3]}
+                coverImage={coverImages[3]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="100"
+                url={urls[4]}
+                heading={headings[4]}
+                title={titles[4]}
+                coverImage={coverImages[4]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="100"
+                url={urls[5]}
+                heading={headings[5]}
+                title={titles[5]}
+                coverImage={coverImages[5]}
+              />
+            </div>
           </div>
-          <div>
-            <ProjectsCard
-              height="100"
-              url={urls[1]}
-              heading={headings[1]}
-              title={titles[1]}
-              coverImage={coverImages[1]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="100"
-              url={urls[2]}
-              heading={headings[2]}
-              title={titles[2]}
-              coverImage={coverImages[2]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="135"
-              url={urls[3]}
-              heading={headings[3]}
-              title={titles[3]}
-              coverImage={coverImages[3]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="100"
-              url={urls[4]}
-              heading={headings[4]}
-              title={titles[4]}
-              coverImage={coverImages[4]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="100"
-              url={urls[5]}
-              heading={headings[5]}
-              title={titles[5]}
-              coverImage={coverImages[5]}
-            />
+          <div className="flex flex-col items-center gap-14 pt-70">
+            <div>
+              <ProjectsCard
+                height="135"
+                url={urls[6]}
+                heading={headings[6]}
+                title={titles[6]}
+                coverImage={coverImages[6]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="135"
+                url={urls[7]}
+                heading={headings[7]}
+                title={titles[7]}
+                coverImage={coverImages[7]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="100"
+                url={urls[8]}
+                heading={headings[8]}
+                title={titles[8]}
+                coverImage={coverImages[8]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="135"
+                url={urls[9]}
+                heading={headings[9]}
+                title={titles[9]}
+                coverImage={coverImages[9]}
+              />
+            </div>
+            <div>
+              <ProjectsCard
+                height="100"
+                url={urls[10]}
+                heading={headings[10]}
+                title={titles[10]}
+                coverImage={coverImages[10]}
+              />
+            </div>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-14 pt-70">
-          <div>
-            <ProjectsCard
-              height="135"
-              url={urls[6]}
-              heading={headings[6]}
-              title={titles[6]}
-              coverImage={coverImages[6]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="135"
-              url={urls[7]}
-              heading={headings[7]}
-              title={titles[7]}
-              coverImage={coverImages[7]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="100"
-              url={urls[8]}
-              heading={headings[8]}
-              title={titles[8]}
-              coverImage={coverImages[8]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="135"
-              url={urls[9]}
-              heading={headings[9]}
-              title={titles[9]}
-              coverImage={coverImages[9]}
-            />
-          </div>
-          <div>
-            <ProjectsCard
-              height="100"
-              url={urls[10]}
-              heading={headings[10]}
-              title={titles[10]}
-              coverImage={coverImages[10]}
-            />
-          </div>
-        </div>
-      </div>
       </div>
       <div>
         <Philosophy />

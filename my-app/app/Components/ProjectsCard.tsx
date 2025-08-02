@@ -24,7 +24,7 @@ const ProjectsCard = ({
   return (
     <div className={`w-100 flex flex-col gap-5 cursor-pointer group`}>
       <div
-        className={`w-full h-${height} overflow-hidden relative rounded-4xl`}
+        className={`lg:w-full w-90 h-${height} overflow-hidden relative rounded-3xl`}
       >
         <video ref={videoRef} src={url} autoPlay muted loop></video>
         <Image
