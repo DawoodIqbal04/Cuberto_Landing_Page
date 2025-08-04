@@ -61,14 +61,14 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter lg:px-0 px-4">
-      <div className="pt-24 lg:pl-34 lg:pb-28">
+    <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-4xl tracking-tighter lg:px-0">
+      <div className="lg:pt-24 pt-20 lg:pl-34 lg:pb-28 px-4">
         <div className="lg:text-[123px] text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
           <div className="font-medium">
             <h1>Featured</h1>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-46 h-30 rounded-full bg-white overflow-hidden lg:flex hidden">
+            <div className="w-46 h-30 rounded-full bg-white overflow-hidden">
               <video src="/feature.mp4" autoPlay muted loop></video>
             </div>
             <div>
@@ -85,7 +85,7 @@ const Projects = () => {
               <video src="/feature.mp4" autoPlay muted loop></video>
             </div>
         </div>
-        <div className="flex gap-12 pt-38">
+        <div className="flex lg:flex-row flex-col gap-12 lg:pt-38 pt-20">
           <div className="flex flex-col items-center gap-14">
             <div>
               <ProjectsCard
@@ -142,7 +142,7 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center gap-14 pt-70">
+          <div className="flex flex-col items-center gap-14 lg:pt-70">
             <div>
               <ProjectsCard
                 height="135"

@@ -22,9 +22,9 @@ const ProjectsCard = ({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <div className={`w-100 flex flex-col gap-5 cursor-pointer group`}>
+    <div className={`w-100 flex flex-col gap-5 cursor-pointer group px-4`}>
       <div
-        className={`lg:w-full w-90 h-${height} overflow-hidden relative rounded-3xl`}
+        className={`lg:w-full h-${height} overflow-hidden relative rounded-3xl`}
       >
         <video ref={videoRef} src={url} autoPlay muted loop></video>
         <Image
@@ -37,7 +37,7 @@ const ProjectsCard = ({
         />
       </div>
       <div className="w-[80%] flex min-h-20 text-[19px] gap-4 ">
-        <p className="tracking-wider">
+        <p className="lg:tracking-wider">
           <span className={`w-max font-bold text-${headingSize} `}>
             {heading}
           </span>{" "}

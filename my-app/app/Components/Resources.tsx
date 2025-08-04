@@ -10,8 +10,8 @@ import Image from "next/image";
 
 const Resources = () => {
   return (
-    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] py-44">
-      <div className="flex flex-col text-[120px] font-medium leading-25 tracking-tighter pl-34">
+    <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-4xl lg:py-44 lg:px-0 px-4 py-20">
+      <div className="flex flex-col lg:text-[120px] text-5xl font-medium lg:leading-25 tracking-tighter lg:pl-34">
         <div>
           <h1>Development</h1>
         </div>
@@ -22,10 +22,26 @@ const Resources = () => {
           <Roboto text="resources" />
         </div>
       </div>
-      <div className="w-full flex px-34 py-34">
+      <div className="lg:w-full w-[250vw] flex lg:px-34 lg:pr-0 py-34">
         <Swiper
           modules={[FreeMode]}
-          spaceBetween={150}
+          breakpoints={
+            {
+              640: {
+                spaceBetween : 200,
+                slidesPerView: 1,
+              },
+              768: {
+                spaceBetween: 300,
+                slidesPerView: 1.55
+              },
+              1024: {
+                spaceBetween: 150,
+                slidesPerView: 2.55
+              }
+
+            }
+          }
           slidesPerView={2.55}
           freeMode={{
             momentum: true,
@@ -41,7 +57,7 @@ const Resources = () => {
         >
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="lg:h-59 h-50 lg:w-104 w-90 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource1.png"}
                   alt="Resource 1"
@@ -55,7 +71,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="lg:h-59 h-50 lg:w-104 w-90 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource2.png"}
                   alt="Resource 2"
@@ -69,7 +85,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="lg:h-59 h-50 lg:w-104 w-90 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource3.png"}
                   alt="Resource 3"
@@ -83,7 +99,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="lg:h-59 h-50 lg:w-104 w-90 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource4.png"}
                   alt="Resource 1"
@@ -97,7 +113,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="lg:h-59 h-50 lg:w-104 w-90 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource5.jpg"}
                   alt="Resource 1"
@@ -111,7 +127,7 @@ const Resources = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-start gap-6">
-              <div className="h-59 w-104 rounded-3xl overflow-hidden">
+              <div className="lg:h-59 h-50 lg:w-104 w-90 rounded-3xl overflow-hidden">
                 <Image
                   src={"/resource6.png"}
                   alt="Resource 2"
