@@ -22,7 +22,7 @@ const ProjectsCard = ({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <div className={`w-100 flex flex-col gap-5 cursor-pointer group px-4`}>
+    <div className={`w-100 flex flex-col gap-5 cursor-pointer group px-6`}>
       <div
         className={`lg:w-full h-${height} overflow-hidden relative rounded-3xl`}
       >
@@ -32,7 +32,7 @@ const ProjectsCard = ({
           width={650}
           height={450}
           alt="project cover"
-          className="absolute inset-0 wull h-full object-cover transition-all duration-400 ease-in-out
+          className="lg:block hidden absolute inset-0 wull h-full object-cover transition-all duration-400 ease-in-out
                    scale-100 opacity-100 group-hover:scale-110 group-hover:opacity-0 pointer-events-none"
         />
       </div>

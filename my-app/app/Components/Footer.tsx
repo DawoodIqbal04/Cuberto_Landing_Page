@@ -1,17 +1,24 @@
 import Link from "next/link";
 import React from "react";
-import { FaBehance, FaDribbble, FaFacebook, FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaBehance,
+  FaDribbble,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[80vh] flex flex-col items-start gap-16  bg-[#000000] text-white px-24 py-40">
-      <div className="w-full flex items-start justify-between">
-        <div className="flex items-center gap-6 w-1/2">
-          <div className="flex flex-col items-start gap-6 w-1/2">
+    <div className="w-full lg:h-[80vh] min-h-screen flex flex-col items-start gap-16  bg-[#000000] text-white lg:px-24 px-6 lg:py-40 py-20">
+      <div className="w-full flex lg:flex-row flex-col items-start justify-between">
+        <div className="flex lg:flex-row flex-col lg:items-center items-start lg:gap-6 gap-16 lg:w-1/2">
+          <div className="flex flex-col items-start gap-6 lg:w-1/2 lg:pr-0 pr-14">
             <div className="flex items-center justify-center tracking-tight w-50 h-10 text-xl border border-white rounded-full">
               <p>info@cuberto.com</p>
             </div>
-            <div className="text-sm">
+            <div className="lg:text-sm">
               <p>
                 <span className="text-neutral-500 tracking-tighter">
                   MAIN OFFICE
@@ -20,11 +27,11 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-start gap-6 w-1/2">
+          <div className="flex flex-col items-start gap-6 lg:w-1/2 lg:pr-0 pr-14">
             <div className="flex items-center justify-center w-46 h-10 text-xl border border-white rounded-full">
               <p>+1 234 567 8900</p>
             </div>
-            <div className="text-sm">
+            <div className="lg:text-sm">
               <p>
                 <span className="text-neutral-500 tracking-tighter">
                   SECOND OFFICE
@@ -34,8 +41,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-13">
-          <div className="flex flex-col text-right gap-3.5 text-xl">
+        <div className="flex items-center gap-13 lg:pt-0 pt-16">
+          <div className="flex flex-col lg:text-right text-left gap-3.5 text-xl">
             <p>
               <Link href={""}>Services</Link>
             </p>
@@ -46,7 +53,7 @@ const Footer = () => {
               <Link href={""}>Company</Link>
             </p>
           </div>
-          <div className="flex flex-col text-right gap-3.5 text-xl">
+          <div className="flex flex-col lg:text-right text-left gap-3.5 text-xl">
             <p>
               <Link href={""}>Blog</Link>
             </p>
@@ -59,30 +66,50 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex items-center justify-between">
+      <div className="w-full flex lg:flex-row flex-col-reverse lg:items-center items-start lg:justify-between lg:gap-0 gap-16">
         <div className="flex items-center gap-4 text-sm">
-            <p><Link href={''}> Privacy Policy</Link></p>
-            <p className="text-neutral-500">2025, Cuberto</p>
+          <p>
+            <Link href={""}> Privacy Policy</Link>
+          </p>
+          <p className="text-neutral-500">2025, Cuberto</p>
         </div>
-        <div className="flex items-center gap-5">
-            <Link href={''} className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full">
-                <FaInstagram />
-            </Link>
-            <Link href={''} className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full">
-                <FaYoutube />
-            </Link>
-            <Link href={''} className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full">
-                <FaGithub />
-            </Link>
-            <Link href={''} className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full">
-                <FaFacebook />
-            </Link>
-            <Link href={''} className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full">
-                <FaDribbble />
-            </Link>
-            <Link href={''} className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full">
-                <FaBehance />
-            </Link>
+        <div className="flex items-center lg:gap-5 gap-2.5">
+          <Link
+            href={""}
+            className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
+          >
+            <FaInstagram />
+          </Link>
+          <Link
+            href={""}
+            className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
+          >
+            <FaYoutube />
+          </Link>
+          <Link
+            href={""}
+            className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
+          >
+            <FaGithub />
+          </Link>
+          <Link
+            href={""}
+            className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
+          >
+            <FaFacebook />
+          </Link>
+          <Link
+            href={""}
+            className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
+          >
+            <FaDribbble />
+          </Link>
+          <Link
+            href={""}
+            className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
+          >
+            <FaBehance />
+          </Link>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import "./globals.css";
 
 const mont = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-})
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${mont.className} overflow-x-hidden antialiased`}
+        className={`${mont.className} overflow-x-hidden max-w-[100vw] antialiased`}
       >
         {children}
       </body>

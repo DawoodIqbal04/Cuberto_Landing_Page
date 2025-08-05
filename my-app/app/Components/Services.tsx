@@ -3,12 +3,16 @@ import Roboto from "./Roboto";
 import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
-  let urls = ["/service1.mp4", "/service2.mp4", "/service3.mp4"];
+  let urls = [
+    "/videos/service1.mp4",
+    "/videos/service2.mp4",
+    "/videos/service3.mp4"
+  ];
 
   let coverImages = [
-    "/serviceimage1.png",
-    "/serviceimage2.png",
-    "/serviceimage3.png",
+    "/images/serviceimage1.png",
+    "/images/serviceimage2.png",
+    "/images/serviceimage3.png",
   ];
 
   let headings = [
@@ -24,10 +28,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#000000] rounded-t-[60px] tracking-tighter">
-      <div className="flex flex-col items-center py-40">
-        <div className="flex flex-col items-start gap-30">
-          <div className="text-[123px] flex flex-col items-start leading-24 ">
+    <div className="w-full min-h-screen text-white bg-[#000000] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0 px-6 ">
+      <div className="flex flex-col items-center lg:py-40 py-20">
+        <div className="flex flex-col items-start lg:gap-30 gap-16">
+          <div className="lg:text-[123px] text-5xl flex flex-col items-start lg:leading-24 ">
             <div className="font-medium">
               <h1>Our</h1>
             </div>
@@ -35,14 +39,14 @@ const Projects = () => {
               <Roboto text="services" />
             </div>
           </div>
-          <div className="text-[20px] leading-8 font-thin tracking-wide w-[40%]">
+          <div className="text-[20px] leading-8 font-thin tracking-wide lg:w-[40%]">
             <h1>
               From motion design to AI-powered products — we design and build
               interfaces for the future.
             </h1>
           </div>
         </div>
-        <div className="flex gap-12 pt-26">
+        <div className="flex lg:flex-row flex-col gap-12 pt-26">
           <div className="flex flex-col items-center gap-14">
             <div>
               <ProjectsCard
@@ -55,7 +59,7 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center gap-14 -mt-30">
+          <div className="flex flex-col items-center gap-14 lg:-mt-30">
             <div>
               <ProjectsCard
                 height="100"
@@ -78,8 +82,8 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className=" mx-[30%] pt-20">
-          <button className="w-60 h-18 border tracking-wide border-white rounded-full text-xl">
+        <div className=" lg:mx-[30%] pt-20">
+          <button className="lg:w-60 lg:h-18 h-20 w-86 border tracking-wide border-white rounded-full text-xl">
             <p>View all services</p>
           </button>
         </div>

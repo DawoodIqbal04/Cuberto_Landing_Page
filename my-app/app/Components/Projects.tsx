@@ -5,31 +5,31 @@ import Philosophy from "./Philosophy";
 
 const Projects = () => {
   let urls = [
-    "/project1.mp4",
-    "/project2.mp4",
-    "/project3.mp4",
-    "/project4.mp4",
-    "/project5.mp4",
-    "/project6.mp4",
-    "/project7.mp4",
-    "/project8.mp4",
-    "/project9.mp4",
-    "/project10.mp4",
-    "/project11.mp4",
+    "/videos/project1.mp4",
+    "/videos/project2.mp4",
+    "/videos/project3.mp4",
+    "/videos/project4.mp4",
+    "/videos/project5.mp4",
+    "/videos/project6.mp4",
+    "/videos/project7.mp4",
+    "/videos/project8.mp4",
+    "/videos/project9.mp4",
+    "/videos/project10.mp4",
+    "/videos/project11.mp4",
   ];
 
   let coverImages = [
-    "/projectcover1.jpg",
-    "/projectcover2.jpg",
-    "/projectcover3.jpg",
-    "/projectcover4.jpg",
-    "/projectcover5.jpg",
-    "/projectcover6.jpg",
-    "/projectcover7.jpg",
-    "/projectcover8.jpg",
-    "/projectcover9.jpg",
-    "/projectcover10.jpg",
-    "/projectcover11.jpg",
+    "/images/projectcover1.jpg",
+    "/images/projectcover2.jpg",
+    "/images/projectcover3.jpg",
+    "/images/projectcover4.jpg",
+    "/images/projectcover5.jpg",
+    "/images/projectcover6.jpg",
+    "/images/projectcover7.jpg",
+    "/images/projectcover8.jpg",
+    "/images/projectcover9.jpg",
+    "/images/projectcover10.jpg",
+    "/images/projectcover11.jpg",
   ];
 
   let headings = [
@@ -61,15 +61,15 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-4xl tracking-tighter lg:px-0">
-      <div className="lg:pt-24 pt-20 lg:pl-34 lg:pb-28 px-4">
+    <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0">
+      <div className="lg:pt-24 py-20 lg:pl-34 lg:pb-28 px-6">
         <div className="lg:text-[123px] text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
           <div className="font-medium">
             <h1>Featured</h1>
           </div>
           <div className="flex items-center gap-4">
             <div className="w-46 h-30 rounded-full bg-white overflow-hidden">
-              <video src="/feature.mp4" autoPlay muted loop></video>
+              <video src="/videos/feature.mp4" autoPlay muted loop></video>
             </div>
             <div>
               <Roboto text="projects" />
@@ -81,9 +81,9 @@ const Projects = () => {
             <h1>Featured</h1>
             <Roboto text="projects" />
           </div>
-            <div className="w-30 h-20 rounded-full bg-white overflow-hidden">
-              <video src="/feature.mp4" autoPlay muted loop></video>
-            </div>
+          <div className="w-30 h-18 rounded-full bg-white overflow-hidden">
+            <video src="/videos/feature.mp4" autoPlay muted loop></video>
+          </div>
         </div>
         <div className="flex lg:flex-row flex-col gap-12 lg:pt-38 pt-20">
           <div className="flex flex-col items-center gap-14">
