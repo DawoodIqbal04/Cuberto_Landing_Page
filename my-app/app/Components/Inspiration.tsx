@@ -17,6 +17,12 @@ const Inspiration = () => {
         <Swiper
           modules={[FreeMode]}
           spaceBetween={-700}
+          breakpoints={{
+            1024: {
+              spaceBetween: -350,
+
+            }
+          }}
           slidesPerView={2.55}
           freeMode={{
             momentum: true,
@@ -34,7 +40,7 @@ const Inspiration = () => {
             <div className="flex flex-col items-start gap-6">
               <div className="bg-white h-50 w-68 rounded-xl overflow-hidden">
                 <Image
-                  src={"/inspo1.png"}
+                  src={"/images/inspo1.png"}
                   alt="Inspo 1"
                   width={500}
                   height={500}
@@ -51,7 +57,7 @@ const Inspiration = () => {
             <div className="flex flex-col items-start gap-6">
               <div className="bg-white h-50 w-68 rounded-xl overflow-hidden">
                 <Image
-                  src={"/inspo2.png"}
+                  src={"/images/inspo2.png"}
                   alt="Inspo 2"
                   width={500}
                   height={500}

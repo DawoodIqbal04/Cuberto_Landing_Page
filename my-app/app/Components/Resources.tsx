@@ -25,17 +25,10 @@ const Resources = () => {
       <div className="lg:w-full w-[250vw] flex lg:px-34 lg:pr-0 py-34">
         <Swiper
           modules={[FreeMode]}
+          spaceBetween={50}
           breakpoints={{
-            640: {
-              spaceBetween: 50,
-              slidesPerView: 1,
-            },
-            768: {
-              spaceBetween: 300,
-              slidesPerView: 1.55,
-            },
             1024: {
-              spaceBetween: 150,
+              spaceBetween: 0,
               slidesPerView: 2.55,
             },
           }}
@@ -99,7 +92,7 @@ const Resources = () => {
               <div className="lg:h-59 lg:w-104 w-full h-full rounded-3xl overflow-hidden">
                 <Image
                   src={"/images/resource4.png"}
-                  alt="Resource 1"
+                  alt="Resource 4"
                   width={500}
                   height={500}
                   className="w-full h-full object-cover"
@@ -113,7 +106,7 @@ const Resources = () => {
               <div className="lg:h-59 lg:w-104 w-full h-full rounded-3xl overflow-hidden">
                 <Image
                   src={"/images/resource5.jpg"}
-                  alt="Resource 1"
+                  alt="Resource 5"
                   width={450}
                   height={500}
                   className="w-full h-full object-cover"
@@ -127,7 +120,7 @@ const Resources = () => {
               <div className="lg:h-59 lg:w-104 w-full h-full rounded-3xl overflow-hidden">
                 <Image
                   src={"/images/resource6.png"}
-                  alt="Resource 2"
+                  alt="Resource 6"
                   width={500}
                   height={500}
                   className="w-full h-full object-cover"
