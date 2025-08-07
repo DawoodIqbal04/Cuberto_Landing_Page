@@ -26,7 +26,7 @@ const Navbar = () => {
     })
 
     gsap.from(burgerRef.current, {
-      x: 70,
+      x:100,
       duration: 1,
       ease: 'power1.inOut',
       delay: 1.3,
