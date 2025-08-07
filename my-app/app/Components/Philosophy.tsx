@@ -3,15 +3,15 @@ import Roboto from "./Roboto";
 
 const Philosophy = () => {
   return (
-    <div className="w-full min-h-screen bg-white text-black flex flex-col lg:items-start items-center lg:px-34 px-6 lg:py-40 py-20 lg:gap-30 gap-20 lg:rounded-t-[60px] rounded-t-4xl ">
+    <div className="w-full min-h-screen bg-white text-black flex flex-col md:items-start items-center lg:px-34 md:px-14 px-6 lg:py-40 py-20 lg:gap-30 gap-20 lg:rounded-t-[60px] rounded-t-4xl ">
       <div className="lg:text-[140px] text-5xl flex flex-col items-start lg:leading-32 lg:mr-0 mr-20">
         <h1 className=" tracking-tight font-medium">Our</h1>
         <div>
           <Roboto text="philosophy" />
         </div>
       </div>
-      <div className="flex items-center lg:pr-20 gap-5 lg:pl-24">
-        <div className="w-1/2 lg:block hidden">
+      <div className="flex lg:flex-row md:flex-col items-center lg:pr-20 gap-5 lg:pl-24">
+        <div className="w-1/2 md:block hidden">
           <video src="/videos/philosophyvideo.mp4" autoPlay muted loop></video>
         </div>
         <div

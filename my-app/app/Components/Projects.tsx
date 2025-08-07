@@ -63,7 +63,7 @@ const Projects = () => {
   return (
     <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0">
       <div className="md:pt-24 py-20 lg:pl-34 md:pl-24 lg:pb-28 px-6">
-        <div className="lg:text-[123px] text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
+        <div className="lg:text-[123px] md:text-6xl text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
           <div className="font-medium">
             <h1>Featured</h1>
           </div>
