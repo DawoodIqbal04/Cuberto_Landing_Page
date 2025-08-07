@@ -6,13 +6,15 @@ import { useRef } from "react";
 
 const ProjectsCard = ({
   height,
+  medHeight,
   url,
   heading,
   title,
   coverImage,
   headingSize,
 }: {
-  height: string;
+  height: number;
+  medHeight: number;
   url: string;
   heading: string;
   title: string;
@@ -24,7 +26,7 @@ const ProjectsCard = ({
   return (
     <div className={`w-100 flex flex-col gap-5 cursor-pointer group px-6`}>
       <div
-        className={`lg:w-full h-${height} overflow-hidden relative rounded-3xl`}
+        className={`lg:w-full md:w-[80%] lg:h-${height} md:h-${medHeight}  overflow-hidden relative lg:rounded-3xl md:rounded-2xl rounded-3xl`}
       >
         <video ref={videoRef} src={url} autoPlay muted loop></video>
         <Image
@@ -32,7 +34,7 @@ const ProjectsCard = ({
           width={650}
           height={450}
           alt="project cover"
-          className="lg:block hidden absolute inset-0 wull h-full object-cover transition-all duration-400 ease-in-out
+          className="md:block hidden absolute inset-0 wull h-full object-cover transition-all duration-400 ease-in-out
                    scale-100 opacity-100 group-hover:scale-110 group-hover:opacity-0 pointer-events-none"
         />
       </div>

@@ -62,7 +62,7 @@ const Projects = () => {
 
   return (
     <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0">
-      <div className="lg:pt-24 py-20 lg:pl-34 lg:pb-28 px-6">
+      <div className="md:pt-24 py-20 lg:pl-34 md:pl-24 lg:pb-28 px-6">
         <div className="lg:text-[123px] text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
           <div className="font-medium">
             <h1>Featured</h1>
@@ -81,15 +81,16 @@ const Projects = () => {
             <h1>Featured</h1>
             <Roboto text="projects" />
           </div>
-          <div className="w-30 h-18 rounded-full bg-white overflow-hidden">
+          <div className="w-30 h-18 md:w-40 md:h-24 rounded-full bg-white overflow-hidden">
             <video src="/videos/feature.mp4" autoPlay muted loop></video>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col gap-12 lg:pt-38 pt-20">
+        <div className="flex md:flex-row flex-col lg:gap-12 md:gap-0 gap-12 md:pt-38 pt-20">
           <div className="flex flex-col items-center gap-14">
             <div>
               <ProjectsCard
-                height="135"
+                height={135}
+                medHeight={115}
                 url={urls[0]}
                 heading={headings[0]}
                 title={titles[0]}
@@ -98,7 +99,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={80}
                 url={urls[1]}
                 heading={headings[1]}
                 title={titles[1]}
@@ -107,7 +109,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={80}
                 url={urls[2]}
                 heading={headings[2]}
                 title={titles[2]}
@@ -116,7 +119,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="135"
+                height={135}
+                medHeight={115}
                 url={urls[3]}
                 heading={headings[3]}
                 title={titles[3]}
@@ -125,7 +129,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={80}
                 url={urls[4]}
                 heading={headings[4]}
                 title={titles[4]}
@@ -134,7 +139,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={80}
                 url={urls[5]}
                 heading={headings[5]}
                 title={titles[5]}
@@ -142,10 +148,11 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center gap-14 lg:pt-70">
+          <div className="flex flex-col items-center gap-14 lg:pt-70 md:pt-40 lg:ml-0 md:-ml-20">
             <div>
               <ProjectsCard
-                height="135"
+                height={135}
+                medHeight={115}
                 url={urls[6]}
                 heading={headings[6]}
                 title={titles[6]}
@@ -154,7 +161,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="135"
+                height={135}
+                medHeight={115}
                 url={urls[7]}
                 heading={headings[7]}
                 title={titles[7]}
@@ -163,7 +171,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={80}
                 url={urls[8]}
                 heading={headings[8]}
                 title={titles[8]}
@@ -172,7 +181,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="135"
+                height={135}
+                medHeight={115}
                 url={urls[9]}
                 heading={headings[9]}
                 title={titles[9]}
@@ -181,7 +191,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={80}
                 url={urls[10]}
                 heading={headings[10]}
                 title={titles[10]}
