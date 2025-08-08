@@ -11,10 +11,10 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full lg:h-[80vh] min-h-screen flex flex-col items-start gap-16  bg-[#000000] text-white lg:px-24 px-6 lg:py-40 py-20">
-      <div className="w-full flex lg:flex-row flex-col items-start justify-between">
-        <div className="flex lg:flex-row flex-col lg:items-center items-start lg:gap-6 gap-16 lg:w-1/2">
-          <div className="flex flex-col items-start gap-6 lg:w-1/2 lg:pr-0 pr-14">
+    <div className="w-full lg:h-[80vh] md:h-[50vh] h-[105vh] flex flex-col items-start gap-16  bg-[#000000] text-white lg:px-24 px-6 lg:py-40 md:py-0 md:pt-55 py-20">
+      <div className="w-full flex md:flex-row flex-col items-start justify-between">
+        <div className="flex md:flex-row flex-col md:items-center items-start md:gap-6 gap-16 md:w-1/2">
+          <div className="flex flex-col items-start gap-6 md:w-1/2 md:pr-0 pr-14">
             <div className="flex items-center justify-center tracking-tight w-50 h-10 text-xl border border-white rounded-full">
               <p>info@cuberto.com</p>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-start gap-6 lg:w-1/2 lg:pr-0 pr-14">
+          <div className="flex flex-col items-start gap-6 md:w-1/2 md:pr-0 pr-14">
             <div className="flex items-center justify-center w-46 h-10 text-xl border border-white rounded-full">
               <p>+1 234 567 8900</p>
             </div>
@@ -41,8 +41,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-13 lg:pt-0 pt-16">
-          <div className="flex flex-col lg:text-right text-left gap-3.5 text-xl">
+        <div className="flex items-center gap-13 md:pt-0 pt-16">
+          <div className="flex flex-col md:text-right text-left gap-3.5 text-xl">
             <p>
               <Link href={""}>Services</Link>
             </p>
@@ -53,7 +53,7 @@ const Footer = () => {
               <Link href={""}>Company</Link>
             </p>
           </div>
-          <div className="flex flex-col lg:text-right text-left gap-3.5 text-xl">
+          <div className="flex flex-col md:text-right text-left gap-3.5 text-xl">
             <p>
               <Link href={""}>Blog</Link>
             </p>
@@ -66,14 +66,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex lg:flex-row flex-col-reverse lg:items-center items-start lg:justify-between lg:gap-0 gap-16">
+      <div className="w-full flex md:flex-row flex-col-reverse md:items-center items-start md:justify-between md:gap-0 gap-16">
         <div className="flex items-center gap-4 text-sm">
           <p>
             <Link href={""}> Privacy Policy</Link>
           </p>
           <p className="text-neutral-500">2025, Cuberto</p>
         </div>
-        <div className="flex items-center lg:gap-5 gap-2.5">
+        <div className="flex items-center md:gap-5 gap-2.5">
           <Link
             href={""}
             className="flex items-center justify-center w-12 h-12 bg-neutral-800 rounded-full"
