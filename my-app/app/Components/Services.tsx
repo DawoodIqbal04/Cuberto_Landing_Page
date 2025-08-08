@@ -28,7 +28,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#000000] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0 px-6 ">
+    <div className="w-full min-h-screen text-white bg-[#000000] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter md:px-30 lg:px-0 px-6 ">
       <div className="flex flex-col items-center lg:py-40 py-20">
         <div className="flex flex-col items-start lg:gap-30 gap-16">
           <div className="lg:text-[123px] text-5xl flex flex-col items-start lg:leading-24 ">
@@ -46,11 +46,12 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col gap-12 pt-26">
-          <div className="flex flex-col items-center gap-14">
+        <div className="flex md:flex-row flex-col gap-12 md:gap-0 lg:gap-12 pt-26 md:pt-50 lg:pt-26">
+          <div className="flex flex-col items-center gap-14 md:ml-18">
             <div>
               <ProjectsCard
-                height="135"
+                height={135}
+                medHeight={135}
                 url={urls[0]}
                 heading={headings[0]}
                 title={titles[0]}
@@ -59,10 +60,11 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center gap-14 lg:-mt-30">
+          <div className="flex flex-col items-center gap-14 md:-mt-30">
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={100}
                 url={urls[1]}
                 heading={headings[1]}
                 title={titles[1]}
@@ -72,7 +74,8 @@ const Projects = () => {
             </div>
             <div>
               <ProjectsCard
-                height="100"
+                height={100}
+                medHeight={100}
                 url={urls[2]}
                 heading={headings[2]}
                 title={titles[2]}
@@ -83,7 +86,7 @@ const Projects = () => {
           </div>
         </div>
         <div className=" lg:mx-[30%] pt-20">
-          <button className="lg:w-60 lg:h-18 h-20 w-86 border tracking-wide border-white rounded-full text-xl">
+          <button className="lg:w-60 lg:h-18 h-20 w-86 border tracking-wide border-white rounded-full text-xl md:text-3xl lg:text-xl">
             <p>View all services</p>
           </button>
         </div>
