@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full lg:h-[80vh] md:h-[50vh] h-[105vh] flex flex-col items-start gap-16  bg-[#000000] text-white lg:px-24 px-6 lg:py-40 md:py-0 md:pt-55 py-20">
+    <div className="w-full lg:h-[80vh] md:h-[50vh] h-[105vh] flex flex-col items-start gap-16  bg-[#000000] text-white lg:px-24 md:px-14 px-6 lg:py-40 md:py-0 md:pt-55 py-20">
       <div className="w-full flex md:flex-row flex-col items-start justify-between">
         <div className="flex md:flex-row flex-col md:items-center items-start md:gap-6 gap-16 md:w-1/2">
           <div className="flex flex-col items-start gap-6 md:w-1/2 md:pr-0 pr-14">
