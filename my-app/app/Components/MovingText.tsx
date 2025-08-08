@@ -62,7 +62,7 @@ const MovingText = () => {
         </div>
         <div
           ref={secondtextRef}
-          className="flex items-center lg:gap-15 gap-10 absolute lg:left-525 left-266"
+          className="flex items-center lg:gap-15 gap-10 absolute lg:left-525 md:left-272 left-266"
         >
           <h1 className="flex font-medium">
             New Day ― <Roboto text="        New            Inspo" />

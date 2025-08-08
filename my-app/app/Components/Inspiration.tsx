@@ -13,14 +13,17 @@ const Inspiration = () => {
       <div>
         <MovingText />
       </div>
-      <div className="lg:w-full w-[400vw] flex lg:px-18 px-6 py-34">
+      <div className="md:w-full w-[400vw] flex lg:px-18 px-6 py-34">
         <Swiper
           modules={[FreeMode]}
           spaceBetween={-700}
           breakpoints={{
+            768: {
+              spaceBetween: -150,
+              slidesPerView: 2
+            },
             1024: {
               spaceBetween: -350,
-
             }
           }}
           slidesPerView={2.55}

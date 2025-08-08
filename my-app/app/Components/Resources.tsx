@@ -36,7 +36,7 @@ const Resources = () => {
           slidesPerView={2.55}
           breakpoints={{
             768: {
-              spaceBetween: 200,
+              spaceBetween: 230,
               slidesPerView: 2
             },
             1024: {
