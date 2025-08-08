@@ -9,28 +9,28 @@ const Hero = () => {
   useGSAP(() => {
     gsap.from('.text1', {
       y: 100,
-      duration: 1,
+      duration: 0.8,
       ease: "expo.Out",
       delay: 1,
       stagger: 0.1,
     });
     gsap.from('.text2', {
       y: 100,
-      duration: 1,
+      duration: 0.8,
       ease: "expo.Out",
       delay: 1.3,
       stagger: 0.1,
     });
     gsap.from('.text3', {
       y: 100,
-      duration: 1,
+      duration: 0.8,
       ease: "expo.Out",
       delay: 1.6,
       stagger: 0.1,
     });
     gsap.from('.herovid', {
       scale: 0,
-      duration: 1,
+      duration: 0.8,
       ease: 'expo.Out',
       delay: 1.4,
     })
