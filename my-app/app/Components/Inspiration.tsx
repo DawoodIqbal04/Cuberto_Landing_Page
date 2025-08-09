@@ -1,19 +1,41 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { FaDribbble } from "react-icons/fa";
 import MovingText from "./MovingText";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Inspiration = () => {
+
+  const swiperRef = useRef(null)
+
+  useGSAP(() => {
+    gsap.from(swiperRef.current, {
+      y: 150,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: swiperRef.current,
+        start: 'top 80%'
+      }
+    }
+    )
+  }, [])
+
   return (
     <div className="w-full overflow-x-hidden lg:gap-60 gap-20 lg:min-h-screen text-black pt-24 lg:pb-10 bg-white flex flex-col">
       <div>
         <MovingText />
       </div>
-      <div className="md:w-full w-[400vw] flex lg:px-18 px-6 py-34">
+      <div ref={swiperRef} className="md:w-full w-[400vw] flex lg:px-18 px-6 py-34">
         <Swiper
           modules={[FreeMode]}
           spaceBetween={-700}
