@@ -1,9 +1,73 @@
-import React from "react";
+import React, { useRef } from "react";
 import Roboto from "./Roboto";
 import ProjectsCard from "./ProjectsCard";
 import Philosophy from "./Philosophy";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
+  const parentRef = useRef(null);
+  const vidRef = useRef(null)
+  const subParentRef1 = useRef(null)
+  const subParentRef2 = useRef(null)
+
+  const itemsRef = useRef<HTMLDivElement[]>([])
+
+  const cardRef = (el: HTMLDivElement | null) => {
+    if (el && !itemsRef.current.includes(el)) {
+      itemsRef.current.push(el);
+    }
+  };
+
+  useGSAP(() => {
+    gsap.from(parentRef.current, {
+      y: 100,
+      opacity: 0,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: parentRef.current,
+        start: "top 110%",
+      },
+    });
+    gsap.from(".prohead", {
+      y: 100,
+      duration: 1.5,
+      delay: 0.5,
+      ease: "expo.out",
+      scrollTrigger: {
+        trigger: parentRef.current,
+        start: "top 100%",
+      },
+    });
+    gsap.from('.provid', {
+      scale: 0,
+      duration: 1.5,
+      delay: 0.5,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: parentRef.current,
+        start: 'top 100%',
+      }
+    })
+    itemsRef.current.forEach((item) => {
+
+      gsap.from(item, {
+        y: 130,
+        opacity: 0,
+        duration: 1.5,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: item,
+          start: 'top 100%',
+        }
+      })
+    })
+  }, []);
+
   let urls = [
     "/videos/project1.mp4",
     "/videos/project2.mp4",
@@ -61,33 +125,45 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0">
+    <div
+      ref={parentRef}
+      className="w-full min-h-screen text-white bg-[#1a1a1a] lg:rounded-t-[60px] rounded-t-4xl tracking-tighter lg:px-0"
+    >
       <div className="md:pt-24 py-20 lg:pl-34 md:pl-24 lg:pb-28 px-6">
         <div className="lg:text-[123px] md:text-6xl text-5xl lg:flex hidden flex-col items-start lg:leading-32 ">
-          <div className="font-medium">
-            <h1>Featured</h1>
+          <div className="font-medium w-max h-28 overflow-hidden">
+            <h1 className="prohead ">Featured</h1>
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-46 h-30 rounded-full bg-white overflow-hidden">
+            <div className="provid w-46 h-30 rounded-full bg-white overflow-hidden">
               <video src="/videos/feature.mp4" autoPlay muted loop></video>
             </div>
-            <div>
+            <div className=" h-35 w-120 pl-0.5 overflow-hidden">
+              <div className="prohead w-full h-full">
+
               <Roboto text="projects" />
+              </div>
             </div>
           </div>
         </div>
         <div className="text-5xl lg:hidden flex items-center gap-5">
           <div className=" flex flex-col items-start">
-            <h1>Featured</h1>
-            <Roboto text="projects" />
+            <div className="h-13 w-max overflow-hidden">
+              <h1 className="prohead">Featured</h1>
+            </div>
+            <div className="h-13 w-50 overflow-hidden">
+              <div className="prohead w-full h-full">
+                <Roboto text="projects" />
+              </div>
+            </div>
           </div>
-          <div className="w-30 h-18 md:w-40 md:h-24 rounded-full bg-white overflow-hidden">
+          <div className="provid w-30 h-18 md:w-40 md:h-24 rounded-full bg-white overflow-hidden">
             <video src="/videos/feature.mp4" autoPlay muted loop></video>
           </div>
         </div>
         <div className="flex md:flex-row flex-col lg:gap-12 md:gap-0 gap-12 md:pt-38 pt-20">
-          <div className="flex flex-col items-center gap-14">
-            <div>
+          <div ref={subParentRef1} className="flex flex-col items-center gap-14">
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
                 medHeight={115}
@@ -97,7 +173,7 @@ const Projects = () => {
                 coverImage={coverImages[0]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={80}
@@ -107,7 +183,7 @@ const Projects = () => {
                 coverImage={coverImages[1]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={80}
@@ -117,7 +193,7 @@ const Projects = () => {
                 coverImage={coverImages[2]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
                 medHeight={115}
@@ -127,7 +203,7 @@ const Projects = () => {
                 coverImage={coverImages[3]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={80}
@@ -137,7 +213,7 @@ const Projects = () => {
                 coverImage={coverImages[4]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={80}
@@ -148,8 +224,8 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col items-center gap-14 lg:pt-70 md:pt-40 lg:ml-0 md:-ml-20">
-            <div>
+          <div ref={subParentRef2} className="flex flex-col items-center gap-14 lg:pt-70 md:pt-40 lg:ml-0 md:-ml-20">
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
                 medHeight={115}
@@ -159,7 +235,7 @@ const Projects = () => {
                 coverImage={coverImages[6]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
                 medHeight={115}
@@ -169,7 +245,7 @@ const Projects = () => {
                 coverImage={coverImages[7]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={80}
@@ -179,7 +255,7 @@ const Projects = () => {
                 coverImage={coverImages[8]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
                 medHeight={115}
@@ -189,7 +265,7 @@ const Projects = () => {
                 coverImage={coverImages[9]}
               />
             </div>
-            <div>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={80}
