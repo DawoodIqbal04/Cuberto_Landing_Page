@@ -44,7 +44,7 @@ const MovingText = () => {
   };
 
   return (
-    <div className="w-full overflow-x-hidden absolute top-[calc(100vh - 300px)] bg-white text-black">
+    <div className="w-full overflow-hidden absolute top-[calc(100vh - 300px)] bg-white text-black">
       <div
         ref={sliderRef}
         className="flex items-center relative lg:min-w-[330vw] w-[2250vw] lg:text-[160px] text-7xl "
