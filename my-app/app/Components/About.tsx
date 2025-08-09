@@ -26,7 +26,7 @@ const About = () => {
       }, 0)
       .to(bottomTextRef.current, {
         y: "0%",
-        duration: 0.4,
+        duration: 0.3,
         ease: "power2.inOut",
       }, 0)
       .to(buttonRef.current, {
@@ -37,14 +37,13 @@ const About = () => {
       })
 
     gsap.from(vidRef.current, {
-      scale: 0.5,
+      scale: 0,
       opacity: 0.5,
       duration: 1,
       ease: "expo.out",
       scrollTrigger: {
         trigger: ".about",
-        start: "top 40%",
-        markers: true,
+        start: "top 30%",
       },
     });
     gsap.from(textRef.current, {
@@ -54,8 +53,7 @@ const About = () => {
       ease: "expo.out",
       scrollTrigger: {
         trigger: ".about",
-        start: "top 40%",
-        markers: true,
+        start: "top 30%",
       },
     });
     gsap.from(buttonRef.current, {
@@ -65,7 +63,7 @@ const About = () => {
       ease: 'power2.inOut',
       scrollTrigger: {
         trigger: '.about',
-        start: 'top 40%'
+        start: 'top 30%'
       }
     })
   }, []);
@@ -98,10 +96,10 @@ const About = () => {
             UI/UX design, mobile, and web development.
           </p>
         </div>
-        <button ref={buttonRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="w-full h-24 relative group border border-black rounded-full overflow-hidden">
-          <div className="relative h-8 text-center z-10 overflow-hidden">
-            <p ref={topTextRef} className="absolute right-[32%] ">What we do</p>
-            <p ref={bottomTextRef} className="absolute right-[32%] text-white ">What we do</p>
+        <button ref={buttonRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="lg:w-full md:w-[70%] w-full h-24 relative group border border-black rounded-full overflow-hidden">
+          <div className="relative h-8 text-center lg:text- md:text-3xl z-10 overflow-hidden">
+            <p ref={topTextRef} className="absolute lg:right-[32%] md:right-40 right-25 ">What we do</p>
+            <p ref={bottomTextRef} className="absolute lg:right-[32%] md:right-40 right-25 text-white ">What we do</p>
           </div>
           <div className="absolute left-0 bottom-[-100%] bg-black w-full  h-full rounded-[50%] group-hover:rounded-none group-hover:bottom-0 transition-all duration-450"></div>
         </button>

@@ -6,6 +6,19 @@ import { useGSAP } from "@gsap/react";
 const Hero = () => {
   const videoRef = useRef(null);
 
+  gsap.set('.herovid', {
+    scale: 0,
+  })
+  gsap.set('.text1', {
+    y: 100
+  })
+  gsap.set('.text3', {
+    y: 100
+  })
+  gsap.set('.text3', {
+    y: 100
+  })
+
   useGSAP(() => {
     gsap.from('.text1', {
       y: 100,
