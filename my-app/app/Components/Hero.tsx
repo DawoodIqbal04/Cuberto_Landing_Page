@@ -12,7 +12,7 @@ const Hero = () => {
   gsap.set('.text1', {
     y: 100
   })
-  gsap.set('.text3', {
+  gsap.set('.text2', {
     y: 100
   })
   gsap.set('.text3', {
@@ -23,28 +23,28 @@ const Hero = () => {
     gsap.from('.text1', {
       y: 100,
       duration: 0.8,
-      ease: "expo.Out",
+      ease: "power2.out",
       delay: 1,
       stagger: 0.1,
     });
     gsap.from('.text2', {
       y: 100,
       duration: 0.8,
-      ease: "expo.Out",
+      ease: "power2.out",
       delay: 1.3,
       stagger: 0.1,
     });
     gsap.from('.text3', {
       y: 100,
       duration: 0.8,
-      ease: "expo.Out",
+      ease: "power2.out",
       delay: 1.6,
       stagger: 0.1,
     });
     gsap.from('.herovid', {
       scale: 0,
       duration: 0.8,
-      ease: 'expo.Out',
+      ease: 'power2.out',
       delay: 1.4,
     })
   }, []);
