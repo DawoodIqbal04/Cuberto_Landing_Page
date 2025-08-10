@@ -104,8 +104,8 @@ const Projects = () => {
       opacity: 0,
       ease: "power2.inOut",
       scrollTrigger: {
-        trigger: ".about",
-        start: "top 30%",
+        trigger: buttonRef.current,
+        start: "top 95%",
       },
     });
   }, []);
