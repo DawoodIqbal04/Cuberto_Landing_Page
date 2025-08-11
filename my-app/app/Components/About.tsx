@@ -8,33 +8,41 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const vidRef = useRef(null);
   const textRef = useRef(null);
-  const topTextRef = useRef(null)
-  const bottomTextRef = useRef(null)
-  const buttonRef = useRef(null)
-  const tl = useRef<gsap.core.Timeline>(null)
+  const topTextRef = useRef(null);
+  const bottomTextRef = useRef(null);
+  const buttonRef = useRef(null);
+  const tl = useRef<gsap.core.Timeline>(null);
 
   useGSAP(() => {
-
     gsap.set(topTextRef.current, { y: "0%" });
     gsap.set(bottomTextRef.current, { y: "100%" });
 
-    tl.current = gsap.timeline({ paused: true })
-      .to(topTextRef.current, {
-        y: "-100%",
-        duration: 0.4,
-        ease: "power2.inOut",
-      }, 0)
-      .to(bottomTextRef.current, {
-        y: "0%",
-        duration: 0.3,
-        ease: "power2.inOut",
-      }, 0)
+    tl.current = gsap
+      .timeline({ paused: true })
+      .to(
+        topTextRef.current,
+        {
+          y: "-100%",
+          duration: 0.4,
+          ease: "power2.inOut",
+        },
+        0
+      )
+      .to(
+        bottomTextRef.current,
+        {
+          y: "0%",
+          duration: 0.3,
+          ease: "power2.inOut",
+        },
+        0
+      )
       .to(buttonRef.current, {
         scale: 1.03,
         duration: 0.5,
         delay: -0.5,
-        ease: 'power2.inOut'
-      })
+        ease: "power2.inOut",
+      });
 
     gsap.from(vidRef.current, {
       scale: 0,
@@ -60,20 +68,20 @@ const About = () => {
       y: 150,
       duration: 1.5,
       opacity: 0,
-      ease: 'power2.inOut',
+      ease: "power2.inOut",
       scrollTrigger: {
-        trigger: '.about',
-        start: 'top 30%'
-      }
-    })
+        trigger: ".about",
+        start: "top 30%",
+      },
+    });
   }, []);
-  
-    const handleMouseEnter= () => {
-      tl.current?.play()
-    }
-    const handleMouseLeave= () => {
-      tl.current?.reverse()
-    }
+
+  const handleMouseEnter = () => {
+    tl.current?.play();
+  };
+  const handleMouseLeave = () => {
+    tl.current?.reverse();
+  };
 
   return (
     <div
@@ -96,10 +104,25 @@ const About = () => {
             UI/UX design, mobile, and web development.
           </p>
         </div>
-        <button ref={buttonRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="lg:w-full md:w-[70%] w-full h-24 relative group border border-black rounded-full overflow-hidden">
+        <button
+          ref={buttonRef}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="lg:w-full md:w-[70%] w-full h-24 relative group border border-black rounded-full overflow-hidden"
+        >
           <div className="relative h-8 text-center lg:text- md:text-3xl z-10 overflow-hidden">
-            <p ref={topTextRef} className="absolute lg:right-[32%] md:right-40 right-25 ">What we do</p>
-            <p ref={bottomTextRef} className="absolute lg:right-[32%] md:right-40 right-25 text-white ">What we do</p>
+            <p
+              ref={topTextRef}
+              className="absolute lg:right-[32%] md:right-40 right-25 "
+            >
+              What we do
+            </p>
+            <p
+              ref={bottomTextRef}
+              className="absolute lg:right-[32%] md:right-40 right-25 text-white "
+            >
+              What we do
+            </p>
           </div>
           <div className="absolute left-0 bottom-[-100%] bg-black w-full  h-full rounded-[50%] group-hover:rounded-none group-hover:bottom-0 transition-all duration-450"></div>
         </button>

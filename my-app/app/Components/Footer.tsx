@@ -9,7 +9,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import gsap from "gsap";
-import CustomEase from "gsap/CustomEase";
 import { useGSAP } from "@gsap/react";
 
 const Footer = () => {
@@ -458,7 +457,7 @@ const Footer = () => {
               gsap.to(".social1", {
                 scale: 0.9,
                 duration: 0.2,
-                ease: 'power2.in'
+                ease: "power2.in",
               })
             }
             onMouseLeave={() =>
@@ -478,7 +477,7 @@ const Footer = () => {
               gsap.to(".social2", {
                 scale: 0.9,
                 duration: 0.2,
-                ease: 'power2.in'
+                ease: "power2.in",
               })
             }
             onMouseLeave={() =>
@@ -498,7 +497,7 @@ const Footer = () => {
               gsap.to(".social3", {
                 scale: 0.9,
                 duration: 0.2,
-                ease: 'power2.in'
+                ease: "power2.in",
               })
             }
             onMouseLeave={() =>
@@ -518,7 +517,7 @@ const Footer = () => {
               gsap.to(".social4", {
                 scale: 0.9,
                 duration: 0.2,
-                ease: 'power2.in'
+                ease: "power2.in",
               })
             }
             onMouseLeave={() =>
@@ -538,7 +537,7 @@ const Footer = () => {
               gsap.to(".social5", {
                 scale: 0.9,
                 duration: 0.2,
-                ease: 'power2.in'
+                ease: "power2.in",
               })
             }
             onMouseLeave={() =>
@@ -558,7 +557,7 @@ const Footer = () => {
               gsap.to(".social6", {
                 scale: 0.9,
                 duration: 0.2,
-                ease: 'power2.in'
+                ease: "power2.in",
               })
             }
             onMouseLeave={() =>

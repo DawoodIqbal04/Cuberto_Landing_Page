@@ -7,33 +7,33 @@ const Hero = () => {
   const videoRef = useRef(null);
 
   useGSAP(() => {
-    gsap.from('.text1', {
+    gsap.from(".text1", {
       y: 100,
       duration: 0.8,
       ease: "power2.out",
       delay: 1,
       stagger: 0.1,
     });
-    gsap.from('.text2', {
+    gsap.from(".text2", {
       y: 100,
       duration: 0.8,
       ease: "power2.out",
       delay: 1.3,
       stagger: 0.1,
     });
-    gsap.from('.text3', {
+    gsap.from(".text3", {
       y: 100,
       duration: 0.8,
       ease: "power2.out",
       delay: 1.6,
       stagger: 0.1,
     });
-    gsap.from('.herovid', {
+    gsap.from(".herovid", {
       scale: 0,
       duration: 0.8,
-      ease: 'power2.out',
+      ease: "power2.out",
       delay: 1.4,
-    })
+    });
   }, []);
 
   return (
@@ -63,7 +63,8 @@ const Hero = () => {
       </div>
       <div className="flex items-center w-max overflow-hidden lg:h-27 md:h-20 ">
         <h1 className=" flex items-center lg:gap-6 gap-2">
-          <span className="text3">motion</span><span className="text3">agency</span>
+          <span className="text3">motion</span>
+          <span className="text3">agency</span>
         </h1>
       </div>
       <div className="herovid w-43 h-30 mx-auto rounded-3xl overflow-hidden md:hidden flex">

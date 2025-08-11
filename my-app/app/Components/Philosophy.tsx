@@ -8,9 +8,8 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const Philosophy = () => {
-  
   const paragraphsRef = useRef<HTMLParagraphElement[]>([]);
-  const videoRef = useRef(null)
+  const videoRef = useRef(null);
   const parentRef = useRef(null);
 
   const addToRefs = (el: HTMLParagraphElement | null) => {
@@ -20,25 +19,24 @@ const Philosophy = () => {
   };
 
   useGSAP(() => {
-    const splits: SplitText[] = []
+    const splits: SplitText[] = [];
 
     paragraphsRef.current.forEach((p) => {
-
       const split = new SplitText(p, { type: "lines" });
       splits.push(split);
 
       gsap.from(split.lines, {
-          scrollTrigger: {
-            trigger: p,
-            start: "top 80%"
-          },
-          y: 50,
-          opacity: 0,
-          duration: 1,
-          stagger: 0.1,
-          ease: "power2.out",
-        });
-    })
+        scrollTrigger: {
+          trigger: p,
+          start: "top 80%",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power2.out",
+      });
+    });
 
     gsap.from(".philhead", {
       y: 100,
@@ -53,17 +51,16 @@ const Philosophy = () => {
       scale: 0,
       opacity: 0.5,
       duration: 0.7,
-      ease: 'power2.out',
+      ease: "power2.out",
       scrollTrigger: {
         trigger: videoRef.current,
-        start: 'top 80%'
-      }
-    })
+        start: "top 80%",
+      },
+    });
 
     return () => {
       splits.forEach((s) => s.revert());
     };
-
   }, []);
 
   return (

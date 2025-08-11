@@ -130,7 +130,7 @@ const Resources = () => {
             <h1 className="reshead ">design</h1>
           </div>
           <div className="reshead h-full">
-              <Roboto text="resources" />
+            <Roboto text="resources" />
           </div>
         </div>
       </div>

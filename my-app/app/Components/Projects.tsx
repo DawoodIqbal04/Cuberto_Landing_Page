@@ -10,11 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const parentRef = useRef(null);
-  const vidRef = useRef(null)
-  const subParentRef1 = useRef(null)
-  const subParentRef2 = useRef(null)
+  const vidRef = useRef(null);
+  const subParentRef1 = useRef(null);
+  const subParentRef2 = useRef(null);
 
-  const itemsRef = useRef<HTMLDivElement[]>([])
+  const itemsRef = useRef<HTMLDivElement[]>([]);
 
   const cardRef = (el: HTMLDivElement | null) => {
     if (el && !itemsRef.current.includes(el)) {
@@ -43,29 +43,28 @@ const Projects = () => {
         start: "top 100%",
       },
     });
-    gsap.from('.provid', {
+    gsap.from(".provid", {
       scale: 0,
       duration: 1.5,
       delay: 0.5,
-      ease: 'power2.out',
+      ease: "power2.out",
       scrollTrigger: {
         trigger: parentRef.current,
-        start: 'top 100%',
-      }
-    })
+        start: "top 100%",
+      },
+    });
     itemsRef.current.forEach((item) => {
-
       gsap.from(item, {
         y: 130,
         opacity: 0,
         duration: 1.5,
-        ease: 'power2.out',
+        ease: "power2.out",
         scrollTrigger: {
           trigger: item,
-          start: 'top 100%',
-        }
-      })
-    })
+          start: "top 100%",
+        },
+      });
+    });
   }, []);
 
   let urls = [
@@ -140,8 +139,7 @@ const Projects = () => {
             </div>
             <div className=" h-35 w-120 pl-0.5 overflow-hidden">
               <div className="prohead w-full h-full">
-
-              <Roboto text="projects" />
+                <Roboto text="projects" />
               </div>
             </div>
           </div>
@@ -162,7 +160,10 @@ const Projects = () => {
           </div>
         </div>
         <div className="flex md:flex-row flex-col lg:gap-12 md:gap-0 gap-12 md:pt-38 pt-20">
-          <div ref={subParentRef1} className="flex flex-col items-center gap-14">
+          <div
+            ref={subParentRef1}
+            className="flex flex-col items-center gap-14"
+          >
             <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
@@ -224,7 +225,10 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div ref={subParentRef2} className="flex flex-col items-center gap-14 lg:pt-70 md:pt-40 lg:ml-0 md:-ml-20">
+          <div
+            ref={subParentRef2}
+            className="flex flex-col items-center gap-14 lg:pt-70 md:pt-40 lg:ml-0 md:-ml-20"
+          >
             <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
