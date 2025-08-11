@@ -55,13 +55,13 @@ const PreFooter = () => {
       },
     });
     gsap.from(buttonRef.current, {
-      y: 150,
-      duration: 1.5,
+      y: 100,
+      duration: 1,
       opacity: 0,
       ease: "power2.inOut",
       scrollTrigger: {
         trigger: textRef.current,
-        start: "top 95%",
+        start: "top 100%",
       },
     });
   }, []);
