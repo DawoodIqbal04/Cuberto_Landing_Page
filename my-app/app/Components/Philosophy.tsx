@@ -87,12 +87,12 @@ const Philosophy = () => {
         >
           <p ref={addToRefs}>
             In our team, developers work alongside designers, strategists and
-            analysts. Cuberto doesn't do cookie-cutter solutions and we build
+            analysts. Cuberto doesn&apos;t do cookie-cutter solutions and we build
             products exactly as they were during the design phase, no short cuts
             or simplifications.
           </p>
           <p ref={addToRefs}>
-            We're driven by user‑centered design that drives productivity and
+            We're driven by user-centered design that drives productivity and
             increases revenue. Our expertise and ingenuity are remarkable, yet
             we always strive to outdo and outperform our previous achievements.
           </p>

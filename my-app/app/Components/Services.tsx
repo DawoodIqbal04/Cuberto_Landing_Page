@@ -117,25 +117,25 @@ const Projects = () => {
     tl.current?.reverse();
   };
 
-  let urls = [
+  const urls = [
     "/videos/service1.mp4",
     "/videos/service2.mp4",
     "/videos/service3.mp4",
   ];
 
-  let coverImages = [
+  const coverImages = [
     "/images/serviceimage1.png",
     "/images/serviceimage2.png",
     "/images/serviceimage3.png",
   ];
 
-  let headings = [
+  const headings = [
     "Brand Identity",
     "AI-enhanced UI/UX design",
     "Custom development",
   ];
 
-  let titles = [
+  const titles = [
     "Strategic design that positions AI products for trust and clarity.",
     "Interfaces that adapt, predict, and respond intelligently.",
     "Frontend + backend + AI integrations — built for performance and scalability.",

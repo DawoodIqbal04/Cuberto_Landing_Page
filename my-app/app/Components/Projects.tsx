@@ -10,7 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const parentRef = useRef(null);
-  const vidRef = useRef(null);
   const subParentRef1 = useRef(null);
   const subParentRef2 = useRef(null);
 
@@ -67,7 +66,7 @@ const Projects = () => {
     });
   }, []);
 
-  let urls = [
+  const urls = [
     "/videos/project1.mp4",
     "/videos/project2.mp4",
     "/videos/project3.mp4",
@@ -81,7 +80,7 @@ const Projects = () => {
     "/videos/project11.mp4",
   ];
 
-  let coverImages = [
+  const coverImages = [
     "/images/projectcover1.jpg",
     "/images/projectcover2.jpg",
     "/images/projectcover3.jpg",
@@ -95,7 +94,7 @@ const Projects = () => {
     "/images/projectcover11.jpg",
   ];
 
-  let headings = [
+  const headings = [
     "Punto Pago",
     "DaoWay",
     "Riyadh",
@@ -109,7 +108,7 @@ const Projects = () => {
     "Ferrum Pipe",
   ];
 
-  let titles = [
+  const titles = [
     "The First Super-App In Latin America",
     "Astrology planner app: plan, achieve, thrive",
     "Official website of Riyadh, Saudi Arabia`s capital",

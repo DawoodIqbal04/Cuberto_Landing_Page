@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
-  const videoRef = useRef(null);
 
   useGSAP(() => {
     gsap.from(".text1", {
