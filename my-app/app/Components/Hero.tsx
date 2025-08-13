@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Roboto from "./Roboto";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

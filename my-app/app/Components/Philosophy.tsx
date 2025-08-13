@@ -92,7 +92,7 @@ const Philosophy = () => {
             or simplifications.
           </p>
           <p ref={addToRefs}>
-            We're driven by user-centered design that drives productivity and
+            We&apos;re driven by user-centered design that drives productivity and
             increases revenue. Our expertise and ingenuity are remarkable, yet
             we always strive to outdo and outperform our previous achievements.
           </p>

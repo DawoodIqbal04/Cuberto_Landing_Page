@@ -16,15 +16,6 @@ const Navbar = () => {
   const timelinesRef = useRef<Map<number, gsap.core.Timeline>>(new Map());
 
   const text = ["Services", "Projects", "Company", "Blog", "Contacts"];
-  const social = [
-    "LinkedIn",
-    "Behance",
-    "Dribbble",
-    "Instagram",
-    "YouTube",
-    "Twitter",
-    "GitHub",
-  ];
 
   useGSAP(() => {
     containersRef.current.forEach((container, i) => {
