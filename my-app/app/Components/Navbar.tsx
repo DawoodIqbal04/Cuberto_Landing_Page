@@ -137,15 +137,15 @@ const Navbar = () => {
   return (
     <div className="relative w-full h-20 flex items-center justify-between px-6 lg:px-8 md:px-14 text-black">
       <div className="h-full w-full flex items-center justify-between">
-        <div ref={logoRef}>
+        <button ref={logoRef}>
           <Image
             src="/images/logo.svg"
             alt="Cuberto Logo"
             width={75}
             height={40}
           />
-        </div>
-        <div onClick={handleClick} className="flex items-center gap-4">
+        </button>
+        <button onClick={handleClick} className="h-10 flex items-center gap-4">
           <div
             className={`mr-10 cursor-pointer font-medium lg:flex hidden overflow-hidden w-max h-max`}
           >
@@ -164,7 +164,7 @@ const Navbar = () => {
               className="h-0.5 lg:w-5 w-7 backdrop-invert"
             ></span>
           </div>
-        </div>
+        </button>
       </div>
       <div
         ref={menuDivRef}

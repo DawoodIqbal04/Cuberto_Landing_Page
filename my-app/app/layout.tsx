@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "./components/Cursor";
 
 const mont = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${mont.className} overflow-x-hidden max-w-[100vw] antialiased`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>
