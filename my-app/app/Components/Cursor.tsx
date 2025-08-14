@@ -8,7 +8,7 @@ import { PiHandSwipeLeft } from "react-icons/pi";
 
 export default function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const expText = useRef(null)
+  const expText = useRef(null);
 
   useEffect(() => {
     const cursor = cursorRef.current;
@@ -32,7 +32,9 @@ export default function CustomCursor() {
 
     window.addEventListener("mousemove", moveCursor);
 
-    const links = document.querySelectorAll("a, button, .cursor-hover, .procard");
+    const links = document.querySelectorAll(
+      "a, button, .cursor-hover, .procard"
+    );
     links.forEach((link) => {
       link.addEventListener("mouseenter", () => {
         gsap.to(cursor, { scale: 3, duration: 0.2, ease: "power2.out" });
@@ -71,32 +73,34 @@ export default function CustomCursor() {
       });
     });
 
-    const swiper = document.querySelector('.swiperparent')
+    const swiper = document.querySelectorAll(".swiperparent");
 
-    swiper?.addEventListener("mouseenter", () => {
-      gsap.to(cursor, {
-        scale: 10,
-        duration: 0.2,
-        backgroundColor: "white",
-        ease: "power2.out",
+    swiper.forEach((swiper) => {
+      swiper?.addEventListener("mouseenter", () => {
+        gsap.to(cursor, {
+          scale: 10,
+          duration: 0.2,
+          backgroundColor: "white",
+          ease: "power2.out",
+        });
+        gsap.to(".drag", {
+          autoAlpha: 1,
+          duration: 0.2,
+          ease: "power2",
+        });
       });
-      gsap.to(".drag", {
-        autoAlpha: 1,
-        duration: 0.2,
-        ease: "power2",
-      });
-    });
-    swiper?.addEventListener("mouseleave", () => {
-      gsap.to(cursor, {
-        scale: 1,
-        duration: 0.2,
-        backgroundColor: "transparent",
-        ease: "power2.out",
-      });
-      gsap.to(".drag", {
-        autoAlpha: 0,
-        duration: 0.2,
-        ease: "power2",
+      swiper?.addEventListener("mouseleave", () => {
+        gsap.to(cursor, {
+          scale: 1,
+          duration: 0.2,
+          backgroundColor: "transparent",
+          ease: "power2.out",
+        });
+        gsap.to(".drag", {
+          autoAlpha: 0,
+          duration: 0.2,
+          ease: "power2",
+        });
       });
     });
 
@@ -123,8 +127,14 @@ export default function CustomCursor() {
       className="fixed flex items-center justify-center text-black font-medium top-0 left-0 w-2 h-2 backdrop-invert rounded-full pointer-events-none z-[9999]"
     >
       <div className="flex items-center justify-center">
-        <IoPlayOutline className="icon translate-x-[1px] translate-y-[-0.3px]" size={2} />
-        <PiHandSwipeLeft className="drag translate-x-[-1px] translate-y-[-0.3px]" size={2} />
+        <IoPlayOutline
+          className="icon opacity-0 translate-x-[1px] translate-y-[-0.3px]"
+          size={2}
+        />
+        <PiHandSwipeLeft
+          className="drag opacity-0 translate-x-[-1px] translate-y-[-0.3px]"
+          size={2}
+        />
       </div>
     </div>
   );

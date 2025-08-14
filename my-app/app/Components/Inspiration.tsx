@@ -59,7 +59,7 @@ const Inspiration = () => {
             momentumBounce: true,
             momentumBounceRatio: 3.2,
           }}
-          className="w-full"
+          className="w-full swiperparent cursor-none"
           style={{ overflow: "visible" }}
         >
           <SwiperSlide>

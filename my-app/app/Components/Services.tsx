@@ -167,7 +167,7 @@ const Projects = () => {
         </div>
         <div className="flex md:flex-row flex-col gap-12 md:gap-0 lg:gap-12 pt-26 md:pt-50 lg:pt-26">
           <div className="flex flex-col items-center gap-14 md:ml-18">
-            <div ref={cardRef}>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={135}
                 medHeight={135}
@@ -180,7 +180,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex flex-col items-center gap-14 md:-mt-30">
-            <div ref={cardRef}>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={100}
@@ -191,7 +191,7 @@ const Projects = () => {
                 headingSize={"xl"}
               />
             </div>
-            <div ref={cardRef}>
+            <div ref={cardRef} className="procard">
               <ProjectsCard
                 height={100}
                 medHeight={100}
