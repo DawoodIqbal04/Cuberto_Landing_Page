@@ -12,6 +12,7 @@ import PreFooter from "./components/PreFooter";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import AvatarVid from "./components/AvatarVid";
 
 export default function Home() {
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Home() {
 
   return (
     <main className="w-full min-h-screen bg-white">
+      <AvatarVid />
       <Navbar />
       <Hero />
       <VideoBar />
