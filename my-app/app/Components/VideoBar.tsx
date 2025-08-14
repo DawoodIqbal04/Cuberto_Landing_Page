@@ -18,7 +18,7 @@ const VideoBar = () => {
   }, [])
 
   return (
-    <div className="videobar lg:w-full md:w-[85%] w-[90%] lg:min-h-screen md:h-[40vh] h-[55vh] relative lg:rounded-none rounded-3xl overflow-hidden lg:mx-0 mx-auto ">
+    <div className="videobar lg:w-full md:w-[85%] w-[90%] lg:min-h-screen md:h-[40vh] h-[55vh] relative lg:rounded-none rounded-3xl overflow-hidden lg:mx-0 mx-auto cursor-none">
       <video
         ref={vidbarRef}
         src="/videos/videobar.mp4"
