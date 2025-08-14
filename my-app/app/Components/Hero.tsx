@@ -46,8 +46,8 @@ const Hero = () => {
         </h1>
       </div>
       <div className="flex items-center gap-4">
-        <div className="herovid w-36 h-24 rounded-full overflow-hidden md:flex hidden">
-          <video src="/videos/herovideo.mp4" muted autoPlay loop></video>
+        <div className="herovid w-34 h-24 rounded-full overflow-hidden md:flex hidden">
+          <video src="/videos/herovideo.mp4" className="object-cover" muted autoPlay loop></video>
         </div>
         <div className="flex items-center w-max overflow-hidden lg:h-27 md:h-20">
           <div className="flex items-center lg:gap-10 gap-5 h-full">
