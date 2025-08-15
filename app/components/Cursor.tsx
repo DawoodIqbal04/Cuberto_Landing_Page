@@ -8,6 +8,7 @@ import { PiHandSwipeLeft } from "react-icons/pi";
 
 export default function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
+  let hasMoved = false
   const expText = useRef(null);
 
   useEffect(() => {
@@ -30,10 +31,15 @@ export default function CustomCursor() {
       yTo(e.clientY - cursor.offsetHeight / 2);
     };
 
+    if (!hasMoved) {
+        hasMoved = true;
+        gsap.to(cursor, { opacity: 1, duration: 0.3 });
+      }
+
     window.addEventListener("mousemove", moveCursor);
 
     const links = document.querySelectorAll(
-      "a, button, .cursor-hover, .procard"
+      "a, button, .cursor-hover, .procard, .Avatar"
     );
     links.forEach((link) => {
       link.addEventListener("mouseenter", () => {
@@ -124,7 +130,7 @@ export default function CustomCursor() {
   return (
     <div
       ref={cursorRef}
-      className="fixed flex items-center justify-center text-black font-medium top-0 left-0 w-2 h-2 backdrop-invert rounded-full pointer-events-none z-[9999]"
+      className="fixed flex items-center justify-center text-black font-medium top-0 left-0 w-2 h-2 backdrop-invert rounded-full pointer-events-none z-[9999] opacity-0"
     >
       <div className="flex items-center justify-center">
         <IoPlayOutline

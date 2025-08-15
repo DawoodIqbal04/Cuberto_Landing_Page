@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CircularText() {
   return (
-    <div className="fixed lg:block hidden bottom-6 right-6 w-35 h-35 z-40 text-neutral-400">
+    <div className="Avatar fixed lg:block hidden bottom-6 right-6 w-35 h-35 z-40 text-neutral-400">
       <svg
         viewBox="0 0 200 200"
         className="w-full h-full animate-spin-slow"
