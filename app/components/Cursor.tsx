@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { FaPlay, FaVideo } from "react-icons/fa";
 import { IoPlayOutline } from "react-icons/io5";
 import { PiHandSwipeLeft } from "react-icons/pi";
 
